@@ -2,6 +2,9 @@ const express = require('express');
 const app = express.Router();
 const City = require('./city.model');
 
+/**
+ * The endpoint list all city
+ */
 app.get('/city', async function (req, res) {
     let city = await City.findAll();
     res.send(city);
