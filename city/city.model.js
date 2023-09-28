@@ -8,6 +8,9 @@ City.init(
         name: {
             type: DataTypes.STRING
         },
+        type: {
+            type: DataTypes.STRING
+        }
     },
     {
         sequelize,
