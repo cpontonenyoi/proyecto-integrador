@@ -3,6 +3,10 @@ const sequelize = require('../connect');
 
 class User extends Model { }
 
+/*
+Tabla user en la base de datos
+*/
+
 User.init(
     {
         name: {
