@@ -3,6 +3,9 @@ const sequelize = require('../connect');
 
 class City extends Model { }
 
+/*
+Automatizamos la tabla city
+*/
 City.init(
     {
         name: {
