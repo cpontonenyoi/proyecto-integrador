@@ -8,6 +8,15 @@ User.init(
         name: {
             type: DataTypes.STRING
         },
+        correo: {
+            type: DataTypes.STRING
+        },
+        password: {
+            type: DataTypes.STRING
+        },
+        iv: {
+            type: DataTypes.STRING
+        }
     },
     {
         sequelize,
@@ -15,6 +24,6 @@ User.init(
     }
 );
 
-User.sync();
+User.sync({alter: true});
 
 module.exports = User;

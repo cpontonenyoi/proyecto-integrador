@@ -10,6 +10,9 @@ UserXCity.init(
         amount: {
             type: DataTypes.INTEGER
         },
+        address: {
+            type: DataTypes.STRING
+        }
     },
     {
         sequelize,
@@ -20,6 +23,6 @@ UserXCity.init(
 UserXCity.belongsTo(User);
 UserXCity.belongsTo(City);
 
-UserXCity.sync();
+UserXCity.sync({alter: true});
 
 module.exports = UserXCity;
